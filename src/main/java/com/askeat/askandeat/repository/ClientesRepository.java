@@ -1,5 +1,5 @@
 package com.askeat.askandeat.repository;
 
-public class ClientesRepository {
+public interface ClientesRepository {
 
 }
