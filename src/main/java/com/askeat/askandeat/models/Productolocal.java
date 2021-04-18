@@ -13,12 +13,12 @@ public class Productolocal {
 	private float precio;
 	private boolean existe;
 
-	public Productolocal(int idProducto, int idLocal, float precio, boolean existe) {
+	public Productolocal(int idProducto, int idLocal, float precio) {
 		super();
 		this.idProducto = idProducto;
 		this.idLocal = idLocal;
 		this.precio = precio;
-		this.existe = existe;
+		this.existe = true;
 	}
 
 	public Productolocal() {}
@@ -44,8 +44,12 @@ public class Productolocal {
 	public void setPrecio(float precio) {
 		this.precio = precio;
 	}
-	public void setExiste(boolean existe) {
-		this.existe = existe;
+	public void setExiste() {
+		if (this.existe){
+			this.existe = false;
+		}else{
+			this.existe = true;
+		}
 	}
 
 
